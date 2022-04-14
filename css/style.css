@@ -9,19 +9,25 @@
 /* Start Global Rules */
 .main-button {
   border: none;
-  background-color: var(--primary-color);
-  color: white;
+  background-color: white;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  padding: 10px 40px;
+  padding: 10px 60px;
   cursor: pointer;
+  color: var(--Very-Dark-Cyan);
+  box-shadow: 1px 1px 10px 0px #9996;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 .main-button:hover {
-  filter: brightness(1.2);
-  -webkit-filter: brightness(1.2);
+  background-color: var(--primary-color);
+  color: white;
 }
 * {
   margin: 0;
@@ -61,11 +67,13 @@ body {
 @media (max-width: 767px) {
   header {
     background-image: url(../images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
   }
 }
 @media (min-width: 768px) {
   header {
     background-image: url(../images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
   }
 }
 header {
@@ -83,7 +91,7 @@ header .container .head img {
   width: 150px;
 }
 header .container .head button {
-  font-size: 16px;
+  /* font-size: 18px;
   border: none;
   background-color: white;
   border-radius: 20px;
@@ -94,7 +102,7 @@ header .container .head button {
   padding: 10px 20px;
   cursor: pointer;
   color: var(--Very-Dark-Cyan);
-  box-shadow: 1px 1px 10px 0px #9996;
+  box-shadow: 1px 1px 10px 0px #9996; */
 }
 header .container .head button:hover {
   filter: brightness(1.2);
@@ -157,7 +165,7 @@ header .container .text p {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 0px 10px 0px rgba(51, 51, 51, 0.1);
-  padding: 10px 30px;
+  padding: 10px 50px;
   margin: 30px 0;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -213,7 +221,11 @@ header .container .text p {
 }
 .body .card .text {
   max-width: 300px;
-  margin-left: 80px;
+  margin-left: 30px;
+}
+.body .middle-card .text {
+  margin-left: 0px;
+  margin-right: 30px;
 }
 .body .card .text h3 {
   font-weight: bold;
@@ -229,7 +241,7 @@ header .container .text p {
 }
 
 .abs-box {
-  background-color: white;
+  background-color: rgb(250, 250, 250);
   position: absolute;
   padding: 30px 50px;
   text-align: center;
@@ -321,8 +333,16 @@ header .container .text p {
   color: white;
   font-size: 16px;
 }
+.footer .container a {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  padding-bottom: 5px;
+}
 .footer .container a:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid white;
 }
 .footer .container .contact .icons i {
   margin-right: 5px;
